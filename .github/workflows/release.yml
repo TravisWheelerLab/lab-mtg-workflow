@@ -27,9 +27,9 @@ jobs:
 
       - name: Build
         run: |
-          make
+          gcc hello.c -o hello
           mkdir -p installation/usr/local/bin
-          cd src && make install DESTDIR=../installation
+          cp hello installation/usr/local/bin
 
       - name: Extract version from github.ref
         id: extract_version

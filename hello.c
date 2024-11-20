@@ -5,7 +5,7 @@
 int main() {
 
     // writing print statement to print hello
-    printf("Hello");
+    printf("Hello everyone");
 
     return 0;
 }
